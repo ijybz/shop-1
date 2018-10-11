@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+
+//= template/header.html
+
+<div class="content">
+    <nav class="breadcrumbs">
+        <div class="container breadcrumbs-flex">
+            <h1>NEW ARRIVALS</h1>
+            <div class="breadcrumbs-links">
+                <a href="index.html">Home</a> / <a href="#">Men</a> / <a href="#" class="active">New Arrivals</a>
+            </div>
+        </div>
+    </nav>
+    <section class="container flex cart">
+        <table class="cart-table">
+            <thead>
+            <tr>
+                <th>Product Details</th>
+                <th>unite Price</th>
+                <th>Quantity</th>
+                <th>shipping</th>
+                <th>Subtotal</th>
+                <th>ACTION</th>
+            </tr>
+            <tr class="cart-item template">
+                <td>
+                    <a href="" class="cart__a cart-item-href"><img src="" alt="" class="cart__img cart-item-img"></a>
+                    <div class="cart__desc">
+                        <a href="" class="cart__a cart-item-href cart-item-name"></a>
+                        <div class="stars cart__stars">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <div class="rate"></div>
+                        </div>
+                        <p><span>Color:</span> Red</p>
+                        <p><span>Size:</span> Xll</p>
+                    </div>
+                </td>
+                <td>$<span class="cart-item-price"></span></td>
+                <td><input type="number" min="0" max="99" value="" class="input-number input-number__cart cart-item-quantity"></td>
+                <td>FREE</td>
+                <td>$<span class="cart-item-subtotal"></span></td>
+                <td><button class="cart-item-del"><i class="fa fa-times-circle"></i></button></td>
+            </tr>
+            </thead>
+            <tbody class="cart-container">
+            </tbody>
+        </table>
+        <div class="cart-buttons">
+            <a href="#" class="cart-clear">CLEAR SHOPPING CART</a>
+            <a href="product.html">CONTINUE SHOPPING</a>
+        </div>
+        <div class="order">
+            <form>
+                <h3>Shipping Adress</h3>
+                <div class="country-select">
+                    <select>
+                        <option value="">Select your country</option>
+                        <option value="">Bolivia</option>
+                        <option value="">United States</option>
+                        <option value="">Germany</option>
+                    </select>
+                </div>
+                <input type="text" placeholder="State" class="input input__mb20">
+                <input type="number" placeholder="Postcode / Zip" class="input input__postcode input__mb25">
+                <input type="submit" value="get a quote" class="input input__cart">
+            </form>
+            <form>
+                <h3>COUPON  DISCOUNT</h3>
+                <p>Enter your coupon code if you have one</p>
+                <input type="text" placeholder="Coupon number" class="input input__mb20">
+                <input type="submit" value="Apply coupon" class="input input__cart">
+            </form>
+            <div class="total-block">
+                <div class="total-table">
+                    <div>
+                        <p class="total-table__sub">Sub total</p>
+                        <p class="total-table__sub">$<span class="cart-total">900</span></p>
+                    </div>
+                    <div>
+                        <p class="total-table__grand">GRAND TOTAL</p>
+                        <p class="total-table__grand total-table__grand_pink">$<span class="cart-total">900</span></p>
+                    </div>
+                </div>
+                <a href="checkout.html">proceed to checkout</a>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="subscribe-opacity">
+            <div class="container flex-between">
+                <div class="feedback">
+                    <figure>
+                        <div>
+                            <img src="img/feedback.png" alt="Bin Burhan foto">
+                            <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a.
+                                Aliquam
+                                condimentum mattis neque sed pretium”</p>
+                        </div>
+                        <p class="feedback-comment">
+                            Bin Burhan<br>
+                            <span>Dhaka, Bd</span>
+                        </p>
+                    </figure>
+                    <a href="#"></a><a href="#" class="active"></a><a href="#"></a>
+                </div>
+                <div class="subscribe-form">
+                    <h2>Subscribe</h2>
+                    <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form action="send.php" class="flex">
+                        <input type="email" required placeholder="Enter Your Email"><input type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+//= template/footer.html
+</body>
+</html>
